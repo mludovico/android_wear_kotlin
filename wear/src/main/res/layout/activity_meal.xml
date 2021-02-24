@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.wear.widget.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
-    android:padding="@dimen/box_inset_layout_padding"
-    tools:context=".MealActivity"
-    tools:deviceIds="wear">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
-        android:boxedEdges="all">
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:boxedEdges="all"
+        tools:ignore="MissingPrefix">
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/meal_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+            android:text="Meal title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-    </FrameLayout>
+        <TextView
+            android:id="@+id/meal_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meal title"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/meal_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meal title"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 </androidx.wear.widget.BoxInsetLayout>
