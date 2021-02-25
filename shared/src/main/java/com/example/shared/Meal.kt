@@ -1,4 +1,4 @@
-package br.com.mludovico.android_wear_kotlin
+package com.example.shared
 
 data class Meal(
     val title: String,

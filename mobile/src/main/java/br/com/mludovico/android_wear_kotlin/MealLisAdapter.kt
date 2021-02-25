@@ -1,9 +1,11 @@
 package br.com.mludovico.android_wear_kotlin
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shared.Meal
 import kotlinx.android.synthetic.main.adapter_meal.view.*
 
 class MealLisAdapter(
@@ -22,6 +24,7 @@ class MealLisAdapter(
         holder.itemView.calories.text = meal.calories.toString()
         holder.itemView.star.visibility = if (meal.favorite) View.VISIBLE else View.INVISIBLE
         holder.itemView.setOnClickListener {
+            Log.i("Adapter", "Meal clicked ${meal.title}")
             callback?.mealClicked(meal)
         }
     }

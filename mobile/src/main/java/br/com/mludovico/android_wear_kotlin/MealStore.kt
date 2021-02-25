@@ -1,6 +1,7 @@
 package br.com.mludovico.android_wear_kotlin
 
 import android.content.Context
+import com.example.shared.Meal
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.BufferedReader
